@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@android:color/white">
+
+    <LinearLayout
+        android:id="@+id/layoutPrincipal"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal">
+
+        <!-- Título -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Gestión de Telas"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:layout_marginBottom="24dp" />
+
+        <!-- Spinner Material -->
+        <Spinner
+            android:id="@+id/spinnerMaterial"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Spinner Color -->
+        <Spinner
+            android:id="@+id/spinnerColor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Cantidad disponible -->
+        <EditText
+            android:id="@+id/editCantidad"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Cantidad disponible (metros)"
+            android:inputType="numberDecimal"
+            android:layout_marginBottom="16dp"
+            android:padding="10dp" />
+
+        <!-- Campo extra para agregar o editar tela (oculto inicialmente) -->
+        <EditText
+            android:id="@+id/editExtraTela"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nombre de la nueva tela"
+            android:padding="10dp"
+            android:visibility="gone"
+            android:layout_marginBottom="10dp" />
+
+        <!-- Botones de acción -->
+        <Button
+            android:id="@+id/btnAgregar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Agregar Tela"
+            android:layout_marginBottom="10dp" />
+
+        <Button
+            android:id="@+id/btnEliminar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Eliminar Tela"
+            android:layout_marginBottom="10dp" />
+
+        <Button
+            android:id="@+id/btnEditar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Editar Tela"
+            android:layout_marginBottom="10dp" />
+
+        <Button
+            android:id="@+id/btnGuardar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Guardar Diseño"
+            android:layout_marginTop="16dp" />
+
+        <!-- Botón Regresar al Menú -->
+        <Button
+            android:id="@+id/btnRegresarMenu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Regresar a Menú"
+            android:layout_marginTop="32dp"
+            android:layout_gravity="center_horizontal"
+            android:textStyle="bold"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+</ScrollView>

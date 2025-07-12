@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- 🔧 ID "main" añadido para que funcione ViewCompat -->
+    <LinearLayout
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bienvenido"
+            android:textSize="30sp"
+            android:layout_gravity="center" />
+
+        <!-- Nombre -->
+        <EditText
+            android:id="@+id/editNombre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nombre"
+            android:inputType="textPersonName"
+            android:textSize="20sp" />
+
+        <!-- Primer Apellido -->
+        <EditText
+            android:id="@+id/editPrimerApellido"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Primer apellido"
+            android:inputType="textPersonName"
+            android:textSize="20sp" />
+
+        <!-- Segundo Apellido -->
+        <EditText
+            android:id="@+id/editSegundoApellido"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Segundo apellido"
+            android:inputType="textPersonName"
+            android:textSize="20sp" />
+
+        <!-- Rol -->
+        <EditText
+            android:id="@+id/editRol"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Rol"
+            android:inputType="text"
+            android:textSize="20sp" />
+
+        <!-- Correo -->
+        <EditText
+            android:id="@+id/editCorreo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Correo electrónico"
+            android:inputType="textEmailAddress"
+            android:textSize="20sp" />
+
+        <!-- Contraseña -->
+        <EditText
+            android:id="@+id/editContrasena"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Contraseña"
+            android:inputType="textPassword"
+            android:textSize="20sp" />
+        <Button
+            android:id="@+id/btnOk"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="OK"
+            android:layout_marginTop="16dp"
+            android:layout_gravity="center" />
+
+        <Button
+            android:id="@+id/btnIrRegistro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ir a Registro"
+            android:layout_marginTop="16dp"
+            android:layout_gravity="center" />
+
+        <!-- Botón -->
+        <Button
+            android:id="@+id/btnIrAlMenu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ir al Menú"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp" />
+        <Button
+            android:id="@+id/btnIrPantallaAntigua"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ir a pantalla anterior"
+            android:layout_marginTop="16dp"/>
+    </LinearLayout>
+</ScrollView>

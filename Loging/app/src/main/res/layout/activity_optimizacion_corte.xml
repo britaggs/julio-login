@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal">
+
+        <!-- Título Principal -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Optimización de Corte"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:paddingBottom="16dp" />
+
+        <!-- Ancho de tela -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ancho de tela"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:paddingTop="8dp" />
+
+        <Spinner
+            android:id="@+id/spinnerAnchoTela"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <!-- Paños de tela -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Paños de tela"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:paddingTop="16dp" />
+
+        <Spinner
+            android:id="@+id/spinnerPanosTela"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <!-- Novedades / Recomendaciones -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Novedades / Recomendaciones"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:paddingTop="16dp" />
+
+        <EditText
+            android:id="@+id/editTextNovedades"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:hint="Escribe aquí..."
+            android:gravity="top"
+            android:inputType="textMultiLine" />
+
+        <!-- Botón Guardar -->
+        <Button
+            android:id="@+id/btnGuardarDiseno"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Guardar Diseño"
+            android:layout_marginTop="24dp" />
+
+        <!-- Botón Regresar a Menú (ahora abajo y centrado) -->
+        <Button
+            android:id="@+id/btnRegresarMenu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Regresar a Menú"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:layout_marginTop="32dp"
+            android:layout_marginBottom="24dp" />
+
+    </LinearLayout>
+</ScrollView>

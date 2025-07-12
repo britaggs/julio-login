@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Biblioteca">
+
+    <LinearLayout
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Título centrado -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Biblioteca"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:paddingBottom="16dp" />
+
+        <!-- Spinner para prendas -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Selecciona Prenda"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+        <Spinner
+            android:id="@+id/spinner_prendas"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <!-- Spinner para tallas -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Selecciona Talla"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginTop="8dp" />
+        <Spinner
+            android:id="@+id/spinner_tallas"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <!-- Campo de texto para exportar -->
+        <EditText
+            android:id="@+id/input_exportar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Texto para exportar"
+            android:layout_marginTop="16dp" />
+        <Button
+            android:id="@+id/btn_exportar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Exportar" />
+
+        <!-- Campo de texto para editar -->
+        <EditText
+            android:id="@+id/input_editar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Texto para editar"
+            android:layout_marginTop="8dp" />
+        <Button
+            android:id="@+id/btn_editar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Editar" />
+
+        <!-- Botón eliminar -->
+        <Button
+            android:id="@+id/btn_eliminar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Eliminar"
+            android:layout_marginTop="8dp" />
+
+        <!-- Botón regresar a menú -->
+        <Button
+            android:id="@+id/btn_regresar_menu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Regresar al Menú"
+            android:layout_marginTop="16dp" />
+
+        <!-- Mostrar información -->
+        <TextView
+            android:id="@+id/texto_guardado"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Información guardada aparecerá aquí"
+            android:paddingTop="24dp"
+            android:textSize="16sp"
+            android:textColor="#555" />
+    </LinearLayout>
+</ScrollView>
